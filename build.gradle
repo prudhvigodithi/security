@@ -11,7 +11,7 @@
 
 buildscript {
     ext {
-        opensearch_version = System.getProperty("opensearch.version", "2.1.0-SNAPSHOT")
+        opensearch_version = System.getProperty("opensearch.version", "3.0.0-SNAPSHOT")
         isSnapshot = "true" == System.getProperty("build.snapshot", "true")
         buildVersionQualifier = System.getProperty("build.version_qualifier", "")
 
@@ -337,7 +337,7 @@ dependencies {
         exclude(group:'org.springframework', module: 'spring-jcl' )
     }
     testRuntimeOnly 'org.scala-lang:scala-library:2.13.8'
-    testRuntimeOnly 'com.yammer.metrics:metrics-core:2.1.0'
+    testRuntimeOnly 'com.yammer.metrics:metrics-core:3.0.0'
     testRuntimeOnly 'com.typesafe.scala-logging:scala-logging_3:3.9.5'
     testRuntimeOnly 'org.apache.zookeeper:zookeeper:3.7.1'
     testRuntimeOnly 'org.apache.kafka:kafka-metadata:3.0.1'
